@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Asignación 02" << endl;
+        int p, Acum, i, j;
+        float Ti, SumaP, SumaT, TIEMPO, V, D, MD;
+
+        cout<<"*****¿Que distancia se correra?*****"<<endl;
+        cout<<"*******EXPRESADA EN DECIMALES*******"<<endl;
+        cin>> D;
+
+        cout<<" ¿Cuantas personas participaran? "<<endl;
+        cin>> p;
+
+        SumaP=0;
+        SumaT=0;
+        Acum=0;
+        TIEMPO=0;
+
+        for (int i=1; i<=p; i++){
+            for (int t=1; t<=p; i++){
+                cout<<" Introduce el tiempo de llegada del participante No: "<<i<<endl;
+                cin>> Ti;
+
+                SumaP= SumaP + i;
+                SumaT= SumaT +Ti;
+                TIEMPO= Ti;
+                t++;
+                V= D / SumaT;
+                MD= SumaT / p;
+                }
+            }
+            for (int j=1; j<=p; j++){
+                     cout<<"la velocidad del corredor No: "<<j<<" fue de: "<<V<<" Km * Hr y su tiermpo fue de: "<<TIEMPO<<endl;
+                cout<<"----------------------------------------------------------------------------------------"<<endl;
+            }
+            cout<<endl;
+
+            cout<<"Participaron: "<<p<<" de corredores y corrieron: "<<D<<" Km"<<endl;
+            cout<<"El promedio de velocidad por cada coredor fue de: "<<MD<<" Km * Hr"<<endl;
+    return 0;
+}
